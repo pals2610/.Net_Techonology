@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C3B4955-E863-4BB0-AC91-62B1ABFC2793}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLy_KhachSan</RootNamespace>
+    <AssemblyName>QuanLy_KhachSan</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chuoiketnoi.cs" />
+    <Compile Include="dangnhap\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap\Repass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap\Repass.Designer.cs">
+      <DependentUpon>Repass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hamhotro\chuyenso_thanhchu.cs" />
+    <Compile Include="hamhotro\ouput_colum_data.cs" />
+    <Compile Include="hamhotro\Xuat_Excel.cs" />
+    <Compile Include="hoadon\nhap_kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hoadon\nhap_kho.Designer.cs">
+      <DependentUpon>nhap_kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_chinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_chinh.Designer.cs">
+      <DependentUpon>Main_chinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quanly\Account_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Account_Manager.Designer.cs">
+      <DependentUpon>Account_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Customer_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Customer_Manager.Designer.cs">
+      <DependentUpon>Customer_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Kindofroom_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Kindofroom_Manager.Designer.cs">
+      <DependentUpon>Kindofroom_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Phuthu_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Phuthu_Manager.Designer.cs">
+      <DependentUpon>Phuthu_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Room_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Room_manager.Designer.cs">
+      <DependentUpon>Room_manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Staff_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Staff_manager.Designer.cs">
+      <DependentUpon>Staff_manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly\Warehouse_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly\Warehouse_Manager.Designer.cs">
+      <DependentUpon>Warehouse_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Dat_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Dat_phong.Designer.cs">
+      <DependentUpon>Dat_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Thue_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Thue_phong.Designer.cs">
+      <DependentUpon>Thue_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Tra_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanly_dat_thue_phong\Tra_phong.Designer.cs">
+      <DependentUpon>Tra_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thongke\ThongKe_DoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongke\ThongKe_DoanhThu.Designer.cs">
+      <DependentUpon>ThongKe_DoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thongke\thongke_hoadon_kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongke\thongke_hoadon_kho.Designer.cs">
+      <DependentUpon>thongke_hoadon_kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem\Search_khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiem\Search_khachhang.Designer.cs">
+      <DependentUpon>Search_khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem\Search_kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiem\Search_kho.Designer.cs">
+      <DependentUpon>Search_kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem\Search_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiem\Search_nhanvien.Designer.cs">
+      <DependentUpon>Search_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem\Search_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiem\Search_phong.Designer.cs">
+      <DependentUpon>Search_phong.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dangnhap\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap\Repass.resx">
+      <DependentUpon>Repass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hoadon\nhap_kho.resx">
+      <DependentUpon>nhap_kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_chinh.resx">
+      <DependentUpon>Main_chinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quanly\Account_Manager.resx">
+      <DependentUpon>Account_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Customer_Manager.resx">
+      <DependentUpon>Customer_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Kindofroom_Manager.resx">
+      <DependentUpon>Kindofroom_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Phuthu_Manager.resx">
+      <DependentUpon>Phuthu_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Room_manager.resx">
+      <DependentUpon>Room_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Staff_manager.resx">
+      <DependentUpon>Staff_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly\Warehouse_Manager.resx">
+      <DependentUpon>Warehouse_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly_dat_thue_phong\Dat_phong.resx">
+      <DependentUpon>Dat_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly_dat_thue_phong\Thue_phong.resx">
+      <DependentUpon>Thue_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanly_dat_thue_phong\Tra_phong.resx">
+      <DependentUpon>Tra_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongke\ThongKe_DoanhThu.resx">
+      <DependentUpon>ThongKe_DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongke\thongke_hoadon_kho.resx">
+      <DependentUpon>thongke_hoadon_kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiem\Search_khachhang.resx">
+      <DependentUpon>Search_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiem\Search_kho.resx">
+      <DependentUpon>Search_kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiem\Search_nhanvien.resx">
+      <DependentUpon>Search_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiem\Search_phong.resx">
+      <DependentUpon>Search_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Custom-reports.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-2-Personal-information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-1-Add-1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
